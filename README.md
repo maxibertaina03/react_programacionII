@@ -1,16 +1,37 @@
-# React + Vite
+# Práctica de React — Programación II
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Primera práctica de React de la materia Programación II: una página con tres componentes chicos para practicar props, estado y eventos.
 
-Currently, two official plugins are available:
+**Alumno:** Máximo Bertaina
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Qué tiene
 
-## React Compiler
+| Componente | Qué practica |
+| --- | --- |
+| `Saludo` | Recibir datos por **props** (`<Saludo nombre="Masita" />`). |
+| `Contador` | Estado con **`useState`** y eventos `onClick` para sumar y restar. |
+| `Formulario` | **Input controlado**: el texto que se escribe se guarda en el estado y se muestra abajo. |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Los tres se usan desde `src/App.jsx`.
 
-## Expanding the ESLint configuration
+## Cómo correrlo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Requisitos: Node.js 18 o superior.
+
+```bash
+npm install
+npm run dev
+```
+
+La app queda en `http://localhost:5173`.
+
+| Comando | Para qué |
+| --- | --- |
+| `npm run dev` | Servidor de desarrollo con recarga automática |
+| `npm run build` | Build de producción en `dist/` |
+| `npm run preview` | Ver el build de producción |
+| `npm run lint` | Revisar el código con ESLint |
+
+## Stack
+
+React 19 + Vite.
